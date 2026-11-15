@@ -27,6 +27,43 @@
 @media(max-width:1080px){.hero{grid-template-columns:1fr}.hero-art{min-height:310px;border-radius:16px;margin-top:22px;grid-row:2}.hero h1{max-width:700px}.welcome{max-width:none}.cards{grid-template-columns:1fr 1fr}.hero{min-height:0}}
 @media(max-width:760px){:root{--sidebar:285px}.mobile-bar{position:sticky;top:0;z-index:15;display:flex;align-items:center;justify-content:space-between;background:#03152e;color:#fff;padding:12px 18px}.mobile-bar strong{font-size:20px}.mobile-bar strong span{color:#ffbb0b}.menu-toggle{background:#ffb900;border:0;border-radius:7px;padding:8px 11px;font-size:21px;color:#05152a}.sidebar{transform:translateX(-100%);transition:transform .25s}.sidebar.open{transform:translateX(0)}.backdrop.show{display:block;position:fixed;inset:0;background:#00102099;z-index:19}.main{margin:0;padding:25px 17px}.topline{margin-bottom:25px}.hero h1{font-size:clamp(31px,7.2vw,43px);letter-spacing:-1.2px}.hero-art{min-height:260px}.cards,.two-col{grid-template-columns:1fr}.feature{min-height:215px}.welcome{padding:19px}.welcome h2{font-size:20px}.welcome p{font-size:14px}.actions{gap:10px}.btn{white-space:normal}.content-section{padding-top:47px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* PMDriven mobile layout refinement — desktop styling unchanged */
+@media (max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .mobile-bar{min-height:60px;padding:10px 16px}
+  .main{width:100%;max-width:100%;margin-left:0;padding:20px 16px 34px}
+  .topline{margin-bottom:23px;padding-bottom:12px}
+  .topline span{font-size:19px}
+  .hero{display:flex;flex-direction:column;gap:18px;min-height:0;margin-bottom:23px}
+  .hero-left{width:100%;min-width:0}
+  .credential-hero-badge{font-size:11px;line-height:1.45;white-space:normal;max-width:100%;padding:7px 10px;margin-bottom:14px}
+  .hero h1{font-size:clamp(29px,7.4vw,37px);line-height:1.13;letter-spacing:-1.05px;margin-bottom:17px;overflow-wrap:break-word}
+  .hero h1 strong{display:block}
+  .eyebrow{white-space:normal;align-items:flex-start;gap:10px;font-size:12px;line-height:1.5;margin-bottom:18px}
+  .eyebrow:before{width:27px;height:3px;margin-top:8px}
+  .welcome{width:100%;max-width:none;padding:18px 16px 19px;border-radius:13px}
+  .welcome h2{font-size:19px;line-height:1.35;letter-spacing:-.35px;margin-bottom:10px}
+  .welcome p{font-size:14px;line-height:1.65;margin-bottom:17px}
+  .actions{display:grid;grid-template-columns:1fr;gap:10px;width:100%}
+  .actions .btn{width:100%;min-height:48px;padding:12px 14px;white-space:normal;text-align:center;font-size:13px}
+  .hero-art{width:100%;min-height:0;height:auto;aspect-ratio:1.75/1;border-radius:13px;margin:0;background-position:center center;background-size:cover}
+  .cards,.two-col{grid-template-columns:minmax(0,1fr);gap:14px}
+  .feature{min-height:0;padding:20px;border-radius:13px}
+  .feature h3{font-size:19px}.feature p{font-size:14px}
+  .content-section{padding-top:42px;scroll-margin-top:75px}
+  .content-section h2{font-size:25px;line-height:1.25}
+  .section-lead{font-size:14px;line-height:1.55}
+  .panel{padding:19px 17px;overflow-wrap:anywhere}
+  .panel a{overflow-wrap:anywhere}
+  .footer{margin-top:48px}
+}
+@media (max-width:380px){
+  .main{padding-left:13px;padding-right:13px}
+  .hero h1{font-size:28px}
+  .hero-art{aspect-ratio:1.5/1}
+  .credential-hero-badge{font-size:10.5px}
+}
 </style></head><body>
 <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11h-7v-7h-4v7H3z" fill="none" stroke="currentColor" stroke-linejoin="round"/></symbol><symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3" fill="none" stroke="currentColor"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8" fill="none" stroke="currentColor"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="18" rx="2" fill="none" stroke="currentColor"/><path d="M8 3h8M8 13l3 3 5-6" fill="none" stroke="currentColor"/></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M2 6h8l2 2h10v12H2z" fill="currentColor"/></symbol><symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5zM6 12v5c4 3 8 3 12 0v-5M22 9v8" fill="none" stroke="currentColor"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/><path d="M12 11v6M12 7v1" stroke="currentColor"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor"/><path d="m2 6 10 8 10-8" fill="none" stroke="currentColor"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor"/><path d="m12 12 9-9M17 3h4v4" fill="none" stroke="currentColor"/></symbol><symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" fill="currentColor"/><circle cx="4" cy="9" r="3" fill="currentColor"/><circle cx="20" cy="9" r="3" fill="currentColor"/><path d="M5 20v-3c0-5 14-5 14 0v3zM1 20v-5c0-2 3-3 5-2M23 20v-5c0-2-3-3-5-2" fill="currentColor"/></symbol></svg>
 <div class="mobile-bar"><strong>PM<span>Driven</span></strong><button class="menu-toggle" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button></div><div class="backdrop" id="backdrop"></div>
