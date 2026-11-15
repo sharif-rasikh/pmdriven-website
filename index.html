@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PMDriven | PMP® Exam Prep, Coaching & Scenario Mindset</title>
-    <!-- Google Fonts for a clean, modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Editorial Serif and Clean Sans-Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* Reset & Base Styles */
+        /* Reset & Editorial Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -20,9 +20,13 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0b132b;
-            color: #e2e8f0;
-            line-height: 1.6;
+            background-color: #fbf9f6; /* Warm Cream */
+            color: #27272a; /* Deep Charcoal */
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, .brand-logo {
+            font-family: 'Lora', serif;
         }
 
         /* Top Navigation Bar */
@@ -31,54 +35,39 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(11, 19, 43, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: rgba(251, 249, 246, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e4e4e7;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 3rem;
+            padding: 1.25rem 4rem;
             z-index: 1000;
         }
 
-        .brand-container {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
         .brand-logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #18181b;
             text-decoration: none;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
         .brand-logo span {
-            color: #f59e0b;
-        }
-
-        .brand-taglines {
-            font-size: 0.75rem;
-            color: #94a3b8;
-            border-left: 1px solid rgba(255, 255, 255, 0.15);
-            padding-left: 1rem;
-            display: flex;
-            gap: 1rem;
+            color: #b45309; /* Refined Bronze/Gold */
         }
 
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         .nav-menu a {
-            color: #cbd5e1;
+            color: #52525b;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
@@ -86,65 +75,64 @@
         }
 
         .nav-menu a:hover, .nav-menu a.active {
-            color: #f59e0b;
+            color: #b45309;
         }
 
         /* Main Container */
         .main-container {
-            max-width: 1350px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 8rem 2rem 4rem 2rem;
+            padding: 9rem 2rem 5rem 2rem;
         }
 
         section {
-            padding: 4rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 5rem 0;
+            border-bottom: 1px solid #e4e4e7;
         }
 
         section:last-of-type {
             border-bottom: none;
         }
 
-        /* Hero Section (Concept Layout) */
+        /* Editorial Hero Section */
         .hero-section {
             display: grid;
-            grid-template-columns: 1fr 1.1fr;
-            gap: 3.5rem;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
             align-items: center;
-            margin-bottom: 4rem;
         }
 
         .hero-text h1 {
-            font-size: 3.25rem;
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            color: #ffffff;
-            margin-bottom: 1.25rem;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #18181b;
+            margin-bottom: 1.5rem;
         }
 
         .hero-text h1 span {
-            color: #f59e0b;
+            color: #b45309;
+            font-style: italic;
         }
 
         .hero-text p {
-            font-size: 1.05rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #52525b;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
         }
 
         .hero-cta {
             display: flex;
-            gap: 1rem;
+            gap: 1.25rem;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 0.85rem 1.75rem;
-            border-radius: 8px;
+            padding: 0.9rem 2rem;
+            border-radius: 4px;
             font-size: 0.95rem;
-            font-weight: 600;
+            font-weight: 500;
             text-decoration: none;
             transition: all 0.2s ease;
             cursor: pointer;
@@ -152,261 +140,168 @@
         }
 
         .btn-primary {
-            background-color: #f59e0b;
-            color: #0b132b;
-            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+            background-color: #18181b;
+            color: #fbf9f6;
+            box-shadow: 0 4px 12px rgba(24, 24, 27, 0.15);
         }
 
         .btn-primary:hover {
-            background-color: #d97706;
+            background-color: #b45309;
             transform: translateY(-1px);
         }
 
         .btn-secondary {
-            background-color: rgba(255, 255, 255, 0.06);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: transparent;
+            color: #18181b;
+            border: 1px solid #d4d4d8;
         }
 
         .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.3);
+            border-color: #18181b;
+            background-color: rgba(0,0,0,0.02);
         }
 
-        /* Concept Hero Right Panel */
-        .hero-concept-visual {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
-            border: 1px solid rgba(245, 158, 11, 0.25);
-            border-radius: 20px;
-            padding: 2.5rem;
-            position: relative;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
-
-        .lifecycle-ring {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .lifecycle-node {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #f59e0b;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .workspace-banner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(11, 19, 43, 0.6);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .workspace-banner h4 {
-            font-size: 1.1rem;
-            color: #ffffff;
-            margin-bottom: 0.25rem;
-        }
-
-        .workspace-banner p {
-            font-size: 0.85rem;
-            color: #94a3b8;
-        }
-
-        /* 5-Card Grid Layout */
-        .cards-grid-5 {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1.25rem;
-            margin-top: 3rem;
-        }
-
-        .card-compact {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card-compact:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-            border-color: rgba(245, 158, 11, 0.4);
-        }
-
-        .card-compact .card-icon {
-            width: 40px;
-            height: 40px;
+        /* Editorial Trust Card */
+        .editorial-card {
+            background: #ffffff;
+            border: 1px solid #e4e4e7;
+            padding: 3rem 2.5rem;
             border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            background-color: rgba(245, 158, 11, 0.1);
-            color: #f59e0b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            position: relative;
         }
 
-        .card-compact h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 0.5rem;
+        .editorial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 2.5rem;
+            width: 40px;
+            height: 3px;
+            background-color: #b45309;
         }
 
-        .card-compact p {
-            font-size: 0.8rem;
-            color: #94a3b8;
-            margin-bottom: 1.25rem;
-            line-height: 1.4;
-        }
-
-        .card-compact .card-link {
-            font-size: 0.8rem;
+        .credential-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #b45309;
             font-weight: 600;
-            color: #f59e0b;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .editorial-card h3 {
+            font-size: 1.5rem;
+            color: #18181b;
+            margin-bottom: 1rem;
+        }
+
+        .editorial-card p {
+            font-size: 0.95rem;
+            color: #52525b;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 3-Column Editorial Grid */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3.5rem;
+        }
+
+        .editorial-col {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border: 1px solid #e4e4e7;
+            border-radius: 6px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .editorial-col:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+        }
+
+        .editorial-col h3 {
+            font-size: 1.25rem;
+            color: #18181b;
+            margin-bottom: 0.75rem;
+        }
+
+        .editorial-col p {
+            font-size: 0.9rem;
+            color: #52525b;
+            margin-bottom: 1.5rem;
+        }
+
+        .editorial-link {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #b45309;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 4px;
         }
 
-        .card-compact .card-link:hover {
+        .editorial-link:hover {
             text-decoration: underline;
         }
 
-        /* Bottom Dual Grid (Founder & Podcast Spotlight) */
-        .bottom-spotlight-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .spotlight-box {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            padding: 2.5rem;
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .founder-header {
-            display: flex;
-            gap: 1.5rem;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
-        }
-
-        .founder-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            flex-shrink: 0;
-            border: 2px solid rgba(255,255,255,0.2);
-        }
-
-        .founder-meta h3 {
-            font-size: 1.25rem;
-            color: #ffffff;
-            margin-bottom: 0.25rem;
-        }
-
-        .founder-meta p {
-            font-size: 0.85rem;
-            color: #f59e0b;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .founder-meta span {
-            font-size: 0.8rem;
-            color: #94a3b8;
-            display: block;
-        }
-
-        .spotlight-box p {
-            color: #cbd5e1;
-            font-size: 0.95rem;
-            margin-bottom: 1.25rem;
-            line-height: 1.6;
+        .section-header {
+            max-width: 700px;
+            margin-bottom: 3rem;
         }
 
         .section-title {
-            font-size: 2.25rem;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 0.75rem;
-            letter-spacing: -0.02em;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #18181b;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
         }
 
         .section-desc {
-            color: #94a3b8;
+            color: #52525b;
             font-size: 1.05rem;
+        }
+
+        /* Podcast Editorial Layout */
+        .podcast-editorial {
+            background: #ffffff;
+            border: 1px solid #e4e4e7;
+            padding: 3rem;
+            border-radius: 8px;
             margin-bottom: 2.5rem;
         }
 
-        /* Podcast Section Styles */
-        .podcast-hero-box {
-            background: rgba(30, 41, 59, 0.7);
-            padding: 2.5rem;
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 2rem;
-        }
-
-        .podcast-hero-box p {
-            color: #cbd5e1;
-            margin-bottom: 1rem;
+        .podcast-editorial p {
+            color: #52525b;
+            margin-bottom: 1.25rem;
             font-size: 1.05rem;
         }
 
-        .spotify-cta-container {
-            margin-top: 1.5rem;
+        .spotify-block {
+            margin-top: 2rem;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid #e4e4e7;
             display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
-        .spotify-link {
-            color: #f59e0b;
+        .spotify-block a {
+            color: #b45309;
             font-weight: 600;
             text-decoration: none;
-            word-break: break-all;
         }
 
-        .spotify-link:hover {
+        .spotify-block a:hover {
             text-decoration: underline;
-        }
-
-        .podcast-tagline {
-            font-style: italic;
-            color: #94a3b8;
-            font-weight: 500;
         }
 
         .podcast-list {
@@ -415,91 +310,100 @@
             gap: 1rem;
         }
 
-        .podcast-card {
-            background: rgba(30, 41, 59, 0.7);
+        .podcast-row {
+            background: #ffffff;
             padding: 1.5rem 2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid #e4e4e7;
+            border-radius: 6px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .podcast-info h4 {
+        .podcast-row h4 {
             font-size: 1.1rem;
-            color: #ffffff;
-            margin-bottom: 0.25rem;
+            color: #18181b;
+            margin-bottom: 0.2rem;
         }
 
-        .podcast-info p {
-            color: #94a3b8;
+        .podcast-row p {
+            color: #71717a;
             font-size: 0.9rem;
         }
 
-        /* Contact Section */
-        .contact-box {
-            background: rgba(30, 41, 59, 0.7);
-            padding: 2.5rem;
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            max-width: 600px;
+        /* About Founder Editorial Box */
+        .about-editorial {
+            background: #ffffff;
+            border: 1px solid #e4e4e7;
+            padding: 3.5rem;
+            border-radius: 8px;
+            max-width: 900px;
         }
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-            margin-top: 1.5rem;
+        .about-editorial p {
+            color: #3f3f46;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Contact Form */
+        .contact-editorial {
+            background: #ffffff;
+            border: 1px solid #e4e4e7;
+            padding: 3rem;
+            border-radius: 8px;
+            max-width: 650px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
         }
 
         .form-group label {
             display: block;
             font-size: 0.85rem;
             font-weight: 600;
-            color: #cbd5e1;
+            color: #27272a;
             margin-bottom: 0.5rem;
         }
 
         .form-group input, .form-group textarea {
             width: 100%;
-            padding: 0.75rem 1rem;
-            background: rgba(15, 23, 42, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 8px;
-            color: #ffffff;
+            padding: 0.85rem 1rem;
+            background: #fbf9f6;
+            border: 1px solid #d4d4d8;
+            border-radius: 4px;
             font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
+            color: #18181b;
         }
 
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
-            border-color: #f59e0b;
+            border-color: #b45309;
         }
 
         .form-group textarea {
             resize: vertical;
-            height: 120px;
+            height: 130px;
         }
 
         /* Footer */
         .site-footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid #e4e4e7;
             padding: 3rem 0;
             text-align: center;
-            color: #94a3b8;
+            color: #71717a;
             font-size: 0.85rem;
         }
 
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .cards-grid-5 { grid-template-columns: repeat(3, 1fr); }
-            .bottom-spotlight-grid { grid-template-columns: 1fr; }
-        }
+        /* Responsive Design */
         @media (max-width: 1024px) {
-            .top-navbar { padding: 1rem 1.5rem; }
-            .brand-taglines { display: none; }
+            .top-navbar { padding: 1rem 2rem; }
             .hero-section { grid-template-columns: 1fr; }
-            .cards-grid-5 { grid-template-columns: 1fr; }
+            .editorial-grid { grid-template-columns: 1fr; }
+            .spotify-block { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
@@ -507,18 +411,9 @@
 
     <!-- Top Navigation Bar -->
     <header class="top-navbar">
-        <div class="brand-container">
-            <a href="#home" class="brand-logo">
-                🏔️ <span>PMDriven</span>
-            </a>
-            <div class="brand-taglines">
-                <span>Project Management</span>
-                <span>Leadership</span>
-                <span>Certification</span>
-                <span>Practical Learning</span>
-            </div>
-        </div>
-        
+        <a href="#home" class="brand-logo">
+            <span>PMDriven</span>
+        </a>
         <nav class="nav-menu">
             <a href="#home" class="active">Home</a>
             <a href="#podcast">Podcast</a>
@@ -537,7 +432,7 @@
         <section id="home">
             <div class="hero-section">
                 <div class="hero-text">
-                    <h1>Life Runs on Projects.<br><span>Learn to Run Them!</span></h1>
+                    <h1>Life Runs on Projects.<br><span>Learn to Run Them.</span></h1>
                     <p>Practical project management learning for PMP® candidates, project managers, and aspiring professionals — turning real-world challenges into practical skills, smarter decisions, and successful project outcomes.</p>
                     <div class="hero-cta">
                         <a href="#practice" class="btn btn-primary">Explore Learning Paths</a>
@@ -545,185 +440,130 @@
                     </div>
                 </div>
                 
-                <!-- Concept Visual Panel -->
-                <div class="hero-concept-visual">
-                    <div class="lifecycle-ring">
-                        <span class="lifecycle-node">🧭 Initiate</span>
-                        <span class="lifecycle-node">📊 Plan</span>
-                        <span class="lifecycle-node">⚙️ Execute</span>
-                        <span class="lifecycle-node">📈 Monitor</span>
-                        <span class="lifecycle-node">🚀 Deliver</span>
-                        <span class="lifecycle-node">🔄 Adapt</span>
-                        <span class="lifecycle-node">🤝 Lead</span>
-                    </div>
-                    <div class="workspace-banner">
-                        <div>
-                            <h4>PMP® Scenario Playbook</h4>
-                            <p>Master situational judgment & Agile mindsets</p>
-                        </div>
-                        <span style="color: #f59e0b; font-weight: 700; font-size: 0.85rem;">VERIFIED</span>
-                    </div>
+                <div class="editorial-card">
+                    <span class="credential-tag">Credly Verified • PMP & MBA</span>
+                    <h3>The Situational Mindset</h3>
+                    <p>Master PMI's complex first-action and Agile transition questions with structured rationale frameworks.</p>
+                    <a href="#practice" class="editorial-link">Discover the Playbook &rarr;</a>
                 </div>
             </div>
 
-            <!-- 5-Card Grid from Concept -->
-            <div class="cards-grid-5">
-                <div class="card-compact">
-                    <div>
-                        <div class="card-icon">📋</div>
-                        <h3>PMP® Scenarios</h3>
-                        <p>Real situational questions, decision analysis, and exam strategies.</p>
-                    </div>
-                    <a href="#practice" class="card-link">Explore &rarr;</a>
+            <div class="editorial-grid">
+                <div class="editorial-col">
+                    <h3>PMP® Scenarios</h3>
+                    <p>Real situational questions, decision analysis, and exam strategies built for first-time passes.</p>
+                    <a href="#practice" class="editorial-link">Explore Scenarios &rarr;</a>
                 </div>
 
-                <div class="card-compact">
-                    <div>
-                        <div class="card-icon">⚡</div>
-                        <h3>Power Skills</h3>
-                        <p>Communication, influence, conflict resolution, and leadership.</p>
-                    </div>
-                    <a href="#coaching" class="card-link">View Coaching &rarr;</a>
+                <div class="editorial-col">
+                    <h3>Coaching & Mentorship</h3>
+                    <p>Direct mentorship combining international public/private sector leadership and rigorous framework execution.</p>
+                    <a href="#coaching" class="editorial-link">View Programs &rarr;</a>
                 </div>
 
-                <div class="card-compact">
-                    <div>
-                        <div class="card-icon">🤝</div>
-                        <h3>Leadership</h3>
-                        <p>Practical insights to build, motivate, and empower high-performing teams.</p>
-                    </div>
-                    <a href="#about" class="card-link">Learn More &rarr;</a>
-                </div>
-
-                <div class="card-compact">
-                    <div>
-                        <div class="card-icon">📖</div>
-                        <h3>Articles & Insights</h3>
-                        <p>Practical articles on project management, Agile, governance, and growth.</p>
-                    </div>
-                    <a href="#resources" class="card-link">Read Articles &rarr;</a>
-                </div>
-
-                <div class="card-compact">
-                    <div>
-                        <div class="card-icon">🎙️</div>
-                        <h3>Scenario Compass</h3>
-                        <p>Our educational podcast with real project challenges & lessons learned.</p>
-                    </div>
-                    <a href="#podcast" class="card-link">Listen &rarr;</a>
-                </div>
-            </div>
-
-            <!-- Bottom Spotlight Grid (Meet the Founder & Podcast Spotlight) -->
-            <div class="bottom-spotlight-grid">
-                <div class="spotlight-box">
-                    <div class="founder-header">
-                        <div class="founder-avatar">👨‍💼</div>
-                        <div class="founder-meta">
-                            <h3>Meet the Founder</h3>
-                            <p>PMP® Certified | MBA | MA in Public Administration (Change Management & Good Governance)</p>
-                            <span>Credly Verified Expert</span>
-                        </div>
-                    </div>
-                    <p>Project management professional, coach, and international mentor with hands-on experience across the public and private sectors, dedicated to practical, real-world learning.</p>
-                    <a href="#about" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Learn More About PMDriven &rarr;</a>
-                </div>
-
-                <div class="spotlight-box" style="display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #f59e0b; font-weight: 700;">The Podcast</span>
-                        <h3 style="font-size: 1.5rem; color: #ffffff; margin: 0.5rem 0 0.5rem 0;">Project Management Scenario Compass</h3>
-                        <p>Real Scenarios. Smarter Decisions.</p>
-                    </div>
-                    <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank" class="btn btn-secondary" style="text-align: center; margin-top: 1.5rem;">Listen on Spotify &rarr;</a>
+                <div class="editorial-col">
+                    <h3>Scenario Compass</h3>
+                    <p>Our educational podcast exploring real project challenges, stakeholder conflicts, and lessons learned.</p>
+                    <a href="#podcast" class="editorial-link">Listen Now &rarr;</a>
                 </div>
             </div>
         </section>
 
         <!-- PODCAST SECTION -->
         <section id="podcast">
-            <h2 class="section-title">Project Management Scenario Compass — Our Podcast</h2>
-            <p class="section-desc">Bite-sized audio guides breaking down real-world project roadblocks, agile mindset dilemmas, and stakeholder conflicts.</p>
+            <div class="section-header">
+                <h2 class="section-title">Project Management Scenario Compass</h2>
+                <p class="section-desc">Bite-sized audio guides breaking down real-world project roadblocks, agile mindset dilemmas, and stakeholder conflicts.</p>
+            </div>
             
-            <div class="podcast-hero-box">
+            <div class="podcast-editorial">
                 <p>Learning doesn't stop at reading. Through our podcast, <em>Project Management Scenario Compass</em>, we explore real-world project challenges, difficult decisions, and practical leadership strategies.</p>
                 <p>From PMP-style situational scenarios to in-depth discussions on communication, conflict resolution, stakeholder management, and Agile leadership, our episodes help project professionals strengthen their judgment and apply what they learn.</p>
                 <p>Eligible PMI certification holders may also be able to claim Education PDUs for qualifying podcast learning activities, subject to PMI's Continuing Certification Requirements.</p>
                 
-                <div class="spotify-cta-container">
-                    <p>🎧 <strong>Listen on Spotify:</strong> <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank" class="spotify-link">https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm</a></p>
-                    <p class="podcast-tagline">Real Scenarios. Smarter Decisions.</p>
+                <div class="spotify-block">
+                    <p>🎧 <strong>Listen on Spotify:</strong> <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank">https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm</a></p>
+                    <span style="font-style: italic; color: #71717a;">Real Scenarios. Smarter Decisions.</span>
                 </div>
             </div>
 
-            <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 1.25rem;">Featured Episodes</h3>
+            <h3 style="font-size: 1.35rem; font-weight: 600; color: #18181b; margin-bottom: 1.25rem;">Featured Episodes</h3>
             <div class="podcast-list">
-                <div class="podcast-card">
-                    <div class="podcast-info">
+                <div class="podcast-row">
+                    <div>
                         <h4>Episode 13: Project 20% Over Budget</h4>
                         <p>How to handle scope creep and corrective action triggers in predictive projects.</p>
                     </div>
-                    <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank" class="btn btn-secondary">Listen on Spotify</a>
+                    <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank" class="editorial-link">Listen &rarr;</a>
                 </div>
-                <div class="podcast-card">
-                    <div class="podcast-info">
+                <div class="podcast-row">
+                    <div>
                         <h4>Episode 12: Client Refuses Sign-Off</h4>
                         <p>Managing stakeholder expectations and navigating acceptance criteria disputes.</p>
                     </div>
-                    <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank" class="btn btn-secondary">Listen on Spotify</a>
+                    <a href="https://open.spotify.com/show/5BedV5wI9ltYM7DwxkUdQm" target="_blank" class="editorial-link">Listen &rarr;</a>
                 </div>
             </div>
         </section>
 
         <!-- PRACTICE QUESTIONS SECTION -->
         <section id="practice">
-            <h2 class="section-title">Practice Questions & Playbook</h2>
-            <p class="section-desc">Test your exam readiness against realistic PMI situational judgment scenarios.</p>
-            <div class="spotlight-box" style="max-width: 800px;">
-                <h3 style="color: #ffffff; margin-bottom: 0.75rem;">Interactive Question Bank Coming Soon</h3>
+            <div class="section-header">
+                <h2 class="section-title">Practice Questions & Playbook</h2>
+                <p class="section-desc">Test your exam readiness against realistic PMI situational judgment scenarios.</p>
+            </div>
+            <div class="editorial-card" style="max-width: 800px;">
+                <span class="credential-tag">Upcoming Release</span>
+                <h3>Interactive Question Bank</h3>
                 <p>We are currently packing the <strong>PMDriven Situational Mindset Playbook</strong> with dozens of scenario questions equipped with detailed PMI rationale breakdowns. Check back shortly!</p>
             </div>
         </section>
 
         <!-- PMP RESOURCES SECTION -->
         <section id="resources">
-            <h2 class="section-title">PMP Resources & PDUs</h2>
-            <p class="section-desc">Guides, frameworks, and continuous learning resources to support your professional journey.</p>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                <div class="spotlight-box">
-                    <h3 style="color: #ffffff; margin-bottom: 0.5rem;">Agile vs. Predictive Cheat Sheet</h3>
-                    <p style="margin-bottom: 0;">Quick reference guide for determining the correct first action when facing team roadblocks.</p>
+            <div class="section-header">
+                <h2 class="section-title">PMP Resources & PDUs</h2>
+                <p class="section-desc">Guides, frameworks, and continuous learning resources to support your professional journey.</p>
+            </div>
+            <div class="editorial-grid" style="grid-template-columns: 1fr 1fr; margin-top: 0;">
+                <div class="editorial-col">
+                    <h3>Agile vs. Predictive Cheat Sheet</h3>
+                    <p>Quick reference guide for determining the correct first action when facing team roadblocks.</p>
                 </div>
-                <div class="spotlight-box">
-                    <h3 style="color: #ffffff; margin-bottom: 0.5rem;">Earn PDUs via Podcast & Website</h3>
-                    <p style="margin-bottom: 0;">Learn how to claim professional development units for maintaining your active PMP certification.</p>
+                <div class="editorial-col">
+                    <h3>Earn PDUs via Podcast & Website</h3>
+                    <p>Learn how to claim professional development units for maintaining your active PMP certification.</p>
                 </div>
             </div>
         </section>
 
         <!-- COACHING SECTION -->
         <section id="coaching">
-            <h2 class="section-title">1-on-1 & Group Coaching</h2>
-            <p class="section-desc">Get tailored guidance from an experienced PMP and MBA professional to guarantee your success.</p>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                <div class="spotlight-box">
-                    <h3 style="color: #ffffff; margin-bottom: 0.5rem;">First-Time Exam Bootcamp</h3>
+            <div class="section-header">
+                <h2 class="section-title">1-on-1 & Group Coaching</h2>
+                <p class="section-desc">Get tailored guidance from an experienced PMP and MBA professional to guarantee your success.</p>
+            </div>
+            <div class="editorial-grid" style="grid-template-columns: 1fr 1fr; margin-top: 0;">
+                <div class="editorial-col">
+                    <h3>First-Time Exam Bootcamp</h3>
                     <p>Comprehensive preparation strategy focusing on mindset shifts, time management, and mock exam deconstructions.</p>
-                    <a href="#contact" class="card-link">Inquire Now &rarr;</a>
+                    <a href="#contact" class="editorial-link">Inquire Now &rarr;</a>
                 </div>
-                <div class="spotlight-box">
-                    <h3 style="color: #ffffff; margin-bottom: 0.5rem;">Retake Strategy & Audit Prep</h3>
+                <div class="editorial-col">
+                    <h3>Retake Strategy & Audit Prep</h3>
                     <p>Targeted coaching for candidates looking to overcome previous hurdles and pass with confidence.</p>
-                    <a href="#contact" class="card-link">Inquire Now &rarr;</a>
+                    <a href="#contact" class="editorial-link">Inquire Now &rarr;</a>
                 </div>
             </div>
         </section>
 
         <!-- ABOUT SECTION -->
         <section id="about">
-            <h2 class="section-title">About PMDriven</h2>
-            <p class="section-desc">Meet your guide and learn the mission behind PMDriven.</p>
-            <div class="spotlight-box">
+            <div class="section-header">
+                <h2 class="section-title">About PMDriven</h2>
+                <p class="section-desc">Meet your guide and learn the professional ethos behind the platform.</p>
+            </div>
+            <div class="about-editorial">
                 <p>PMDriven was founded on a simple principle: <strong>Life Runs on Projects. Learn to Run Them!</strong></p>
                 <p>Your guide is PMP® Certified, an MBA holder, and has extensive experience as a fellow, coach, and international mentor in leadership and management through the United Nations Institute for Training and Research (UNITAR). Backed by years of hands-on project management and leadership experience across both the public and private sectors, PMDriven bridges the gap between theory and execution.</p>
                 <p style="margin-bottom: 0;">Drawing from real-world project environments, we cut through the theoretical clutter to teach you the practical, situational mindset required to excel on the PMP exam and lead high-performing teams with confidence.</p>
@@ -732,9 +572,11 @@
 
         <!-- CONTACT SECTION -->
         <section id="contact">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-desc">Have questions about coaching, podcast episodes, or the upcoming playbook? Reach out below.</p>
-            <div class="contact-box">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-desc">Have questions about coaching, podcast episodes, or the upcoming playbook? Reach out below.</p>
+            </div>
+            <div class="contact-editorial">
                 <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you shortly.');">
                     <div class="form-group">
                         <label>Your Name</label>
