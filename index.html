@@ -174,7 +174,7 @@
 <footer class="footer">
   <p>© 2026 PMDriven.com. All rights reserved. PMDriven is independent and is not affiliated with or endorsed by PMI.</p>
   <p><strong>Privacy Notice:</strong> PMDriven collects information voluntarily submitted through our contact form solely to respond to inquiries. Submissions are processed through FormSubmit and are not sold or used for unsolicited marketing.</p>
-  <p><strong>Trademark Disclaimer:</strong> PMP® is a registered trademark of the Project Management Institute, Inc. PMDriven is independent and is not affiliated with or endorsed by PMI.</p>
+  <p><strong>Trademark Disclaimer:</strong> PMP® is a registered trademark of the Project Management Institute, Inc.</p>
 </footer></main>
 <script>
 const sidebar=document.getElementById('sidebar'),menu=document.getElementById('menuBtn'),backdrop=document.getElementById('backdrop');function closeMenu(){sidebar.classList.remove('open');backdrop.classList.remove('show');menu.setAttribute('aria-expanded','false')}menu.addEventListener('click',()=>{let open=sidebar.classList.toggle('open');backdrop.classList.toggle('show',open);menu.setAttribute('aria-expanded',String(open))});backdrop.addEventListener('click',closeMenu);document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active');closeMenu()}));document.getElementById('contactForm').addEventListener('submit', async e => {
