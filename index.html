@@ -123,59 +123,37 @@
 #practice .pq-status{font-weight:700;margin:0;color:#526781}
 @media(max-width:640px){#practice .pq-grid{grid-template-columns:1fr}#practice .pq-panel{padding:16px}#practice .pq-actions .pq-btn{flex:1}}
  
-/* PMDriven: laptop-style hero layout on mobile */
-@media (max-width:760px) {
+/* PMDriven mobile hero: two columns, complete compass image, no desktop changes. */
+@media (max-width: 760px) {
   .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
     gap: 10px;
     align-items: stretch;
   }
-
-  .hero-left {
-    min-width: 0;
-  }
-
+  .hero-left { min-width: 0; }
   .hero-art {
-    grid-row: 1;
     grid-column: 2;
+    grid-row: 1;
+    align-self: center;
     width: 100%;
-    height: height: 360px;
-align-self: center;
+    height: auto;
     min-height: 0;
     max-height: none;
-    aspect-ratio: auto;
+    aspect-ratio: 1298 / 1422;
     margin: 0;
     border-radius: 12px;
-    background-size: contain; background-repeat: no-repeat; background-color: #f8fafc;
-    background-position: 45% center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
   }
-
-  .hero h1 {
-    font-size: clamp(17px, 4vw, 25px);
-    letter-spacing: -0.5px;
-  }
-
-  .credential-hero-badge {
-    font-size: 9px;
-  }
-
-  .welcome {
-    padding: 12px 10px;
-  }
-
-  .welcome h2 {
-    font-size: 14px;
-  }
-
-  .welcome p {
-    font-size: 11px;
-  }
-
-  .actions .btn {
-    font-size: 10px;
-    padding: 9px 6px;
-  }
+  .hero h1 { font-size: clamp(17px, 4vw, 25px); letter-spacing: -0.5px; }
+  .credential-hero-badge { font-size: 9px; }
+  .welcome { padding: 12px 10px; }
+  .welcome h2 { font-size: 14px; }
+  .welcome p { font-size: 11px; }
+  .actions .btn { font-size: 10px; padding: 9px 6px; }
 }
 
 </style>
